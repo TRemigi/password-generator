@@ -1,8 +1,8 @@
 // Assignment code here
 var selectedChars = [];
 var userPassword = {
-  length: " ",
-  characters: " "
+  length: "",
+  characters: ""
 }
 var lowerChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var upperChars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -11,7 +11,7 @@ var specialChars = ['!', '#', '$', '%', '&', '(', ')', '*', '+', ',', '-', '.', 
 
 var generatePassword = function () {
   selectedChars = [];
-  userPassword.length = 0;
+  userPassword.length = " ";
   userPassword.characters = " ";
   userPassword.length = window.prompt("Choose length of password. Please enter a number from 8 to 128.");
   userPassword.length = parseInt(userPassword.length);
@@ -46,7 +46,7 @@ var generatePassword = function () {
       (!numericConfirm) &&
       (!specialConfirm)) {
       window.alert("You must choose at least one character type.");
-      return writePassword();
+      return generatePassword();
     }
   } else {
     window.alert("You must enter a number between 8 and 128.");
