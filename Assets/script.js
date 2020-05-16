@@ -59,7 +59,7 @@ var generatePassword = function () {
     // validate that selected password length falls within prescribed parameters
   } else {
     window.alert("You must enter a number between 8 and 128.");
-    return writePassword();
+    return generatePassword();
   }
   // generate password characters based on user-selected parameters
   for (i = 0; i < userPassword.length; i++) {
