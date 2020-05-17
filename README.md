@@ -1,7 +1,7 @@
 # Password Generator
 https://tremigi.github.io/password-generator/
 
-The Password Generator is a project completed by Taylor Remigi by adding additional JavaScript to pre-existing code, with the goal of creating a page where a user can create a random password based on parameters they choose. The JavaScript features multiple if ()functions and one for() loop to accomplish the desired results.
+The Password Generator is a project completed by Taylor Remigi by adding additional JavaScript to pre-existing code, with the goal of creating a page where a user can create a random password based on parameters they choose. The JavaScript features multiple if() functions and one for() loop to accomplish the desired results.
 
 <img src="./Assets/password-generator-screen.png" />
 
